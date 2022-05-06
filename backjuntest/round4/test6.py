@@ -8,3 +8,17 @@
 # 각 테스트 케이스는 한 줄로 이루어져 있고, 길이가 0보다 크고 80보다 작은 문자열이 주어진다. 문자열은 O와 X만으로 이루어져 있다.
 
 # 각 테스트 케이스마다 점수를 출력한다.
+
+t = int(input())
+for i in range(t):
+    score = 0
+    score2 = 0
+    a = list(input())
+    
+    for j in a:
+        if j == 'O':
+            score += 1
+            score2 += score
+        elif j == 'X':
+            score = 0
+    print(score2)
